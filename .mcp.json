@@ -14,7 +14,7 @@
         "hostinger-api-mcp@latest"
       ],
       "env": {
-        "API_TOKEN": "o259sY8BBBXZSC9u7Pq3iQJltUJQ2uDkP6mUVpr3683bfcfb"
+        "API_TOKEN": "${input:api_token}"
       }
     }
   }
