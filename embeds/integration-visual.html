@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>STRIDE + LIA2 Integration Visual</title>
+  <style>
+    body { font-family: 'Inter', sans-serif; margin: 0; padding: 20px; background: #F8FAFC; }
+    .integration { display: flex; gap: 24px; align-items: center; justify-content: center; max-width: 700px; margin: 0 auto; }
+    .component { flex: 1; padding: 32px 24px; border-radius: 12px; text-align: center; }
+    .stride-box { background: #022C22; color: white; }
+    .lia2-box { background: #2563EB; color: white; }
+    .component h3 { font-size: 20px; font-weight: 800; margin: 0 0 8px; color: white; }
+    .component p { font-size: 14px; opacity: 0.85; margin: 0; }
+    .connector { font-size: 32px; color: #059669; font-weight: 800; }
+    @media (max-width: 500px) { .integration { flex-direction: column; } .connector { transform: rotate(90deg); } }
+  </style>
+</head>
+<body>
+  <div class="integration">
+    <div class="component stride-box"><h3>STRIDE</h3><p>What students learn</p></div>
+    <div class="connector">+</div>
+    <div class="component lia2-box"><h3>LIA2</h3><p>How they practice it</p></div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grade Band Progression Visual</title>
+  <style>
+    body { font-family: 'Inter', sans-serif; margin: 0; padding: 20px; background: #F8FAFC; }
+    .progression { display: flex; gap: 16px; max-width: 800px; margin: 0 auto; }
+    .band { flex: 1; padding: 24px; background: white; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.07); text-align: center; }
+    .band-label { font-size: 12px; text-transform: uppercase; letter-spacing: 0.1em; color: #2563EB; font-weight: 600; margin-bottom: 8px; }
+    .band h3 { font-size: 16px; color: #022C22; margin: 0 0 4px; }
+    .band p { font-size: 13px; color: #64748B; margin: 0; }
+    .arrow { display: flex; align-items: center; color: #059669; font-size: 24px; font-weight: 800; }
+    @media (max-width: 600px) { .progression { flex-direction: column; } .arrow { justify-content: center; transform: rotate(90deg); } }
+  </style>
+</head>
+<body>
+  <div class="progression">
+    <div class="band"><div class="band-label">K-2</div><h3>Discover</h3><p>Prompting Through Play</p></div>
+    <div class="arrow">&rarr;</div>
+    <div class="band"><div class="band-label">3-5</div><h3>Discover</h3><p>Prompting to Create</p></div>
+    <div class="arrow">&rarr;</div>
+    <div class="band"><div class="band-label">6-8</div><h3>Develop</h3><p>Prompting for Collaboration</p></div>
+    <div class="arrow">&rarr;</div>
+    <div class="band"><div class="band-label">9-12</div><h3>Drive</h3><p>Prompting with Responsibility</p></div>
+  </div>
+</body>
+</html>
